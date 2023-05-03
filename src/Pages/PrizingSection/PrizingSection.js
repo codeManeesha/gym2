@@ -3,7 +3,7 @@ import React from 'react'
 const PrizingSection = () => {
   return (
     <div>
-      <h1> PrizingSection</h1>
+      <h1> this is PrizingSection</h1>
       <p> dummy </p>
     </div>
   )
