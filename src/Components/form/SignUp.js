@@ -66,7 +66,7 @@ export default function SignUp() {
       
     localStorage.setItem('userData', JSON.stringify([...localStorageData, userInfo]));
     alert('Successfully Registered!!');
-    navigate('/');
+    navigate('/login');
   
     setEmail('');
     setPassword('');
@@ -112,7 +112,7 @@ export default function SignUp() {
           btntxt="SignUp"
         />
         <p>
-          Already registered? <Link to="/">Login</Link>
+          Already registered? <Link to="/login">Login</Link>
         </p>
       </div>
     </>
