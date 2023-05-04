@@ -1,0 +1,195 @@
+.main {
+	display: flex;
+	gap: 50px;
+	margin-top: 50px;
+	padding: 20px;
+	margin-left: 100px;
+}
+.heading {
+	color: yellow;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+
+}
+.Free {
+
+	padding: 30px;
+	background-image: linear-gradient(red 10%, 30%, blue 90%);
+	color: white;
+	border-radius: 15PX;
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.Free:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.pass {
+
+	padding: 30px;
+	background-image: linear-gradient(red 10%, 30%, blue 90%);
+	color: white;
+	border-radius: 15PX;
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.pass:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.monthly {
+	padding: 20px;
+	color: white;
+	background-image: linear-gradient(red 10%, 30%, blue 90%);
+	border-radius: 15PX;
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+.monthly:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+h5 {
+	color: gold;
+	text-align: center;
+}
+.membership {
+	border: 1px solid black;
+	padding: 20px;
+	font-family: "Times New Roman", Times, serif;
+	background-image: linear-gradient(orange 10%, gray 20%);
+	color: black;
+}
+.large {
+	/* background-image: url("./gym-g7320dfddf_1920.jpg"); */
+	background-color: #cccccc;
+	height: 800px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	
+}
+.button1 {
+    margin-top: 100px;
+
+	display: inline-block;
+    padding: 5px 10px;
+	font-size: 20px;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 8px;
+
+
+}
+
+.button2 {
+    margin-top: 125px;
+	display: inline-block;
+    padding: 5px 10px;
+	font-size: 20px;
+	cursor: pointer;
+
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 8px;
+
+}
+
+.button3 {
+	margin-top: 90px;
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: 20px;
+	cursor: pointer;
+
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 8px;
+
+}
+
+.button4 {
+	margin-top: 60px;
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: 20px;
+	cursor: pointer;
+
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 8px;
+}
+.button1:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.button2:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.button3:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.button4:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dollers {
+	font-size: 90px;
+	font-family: 'Brush Script MT', cursive;
+}
+.list1{
+	margin-top: 50px;
+}
+.list2{
+	margin-top: 50px;
+}
+.list3{
+	margin-top: 50px;
+}
+.list4{
+	margin-top: 50px;
+}
+
+@media only screen and (min-width: 300px) and (max-width : 750px){
+	.main {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		margin-top: 2rem;
+		justify-content: center;	
+		width: 50%;
+	}
+    .large{
+		height: 100%;
+		flex-direction: column;
+	}
+	.membership{
+		display: flex;
+		flex-direction: column;
+	}
+	.Free{
+		height: fit-content;
+		width: fit-content;
+	}
+}
+@media only screen and (min-width: 800px) and (max-width : 1200px){
+	.large{
+		width: 100%;
+		flex-direction: column;
+	}
+}
