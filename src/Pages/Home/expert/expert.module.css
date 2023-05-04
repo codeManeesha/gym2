@@ -1,0 +1,112 @@
+ .main_container{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+.main_container>h4{
+    color: grey;
+    font-size: 25px;
+}
+.main_container>h1{
+    font-weight: 400;
+}
+.main_container>h1>span{
+    color: grey;
+    font-size: 40px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.trainer_col{
+    width: 23%;
+    height: 50vh;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.trainer_col img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.layer{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+.layer:hover{
+	background:rgba(255, 254, 254, 0.219);
+}
+.layer h2{
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 36px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layer:hover h2{
+	bottom: 10%;
+	opacity: 1;
+}
+@media screen and (min-width: 601px) and (max-width: 1024px){
+	.row{
+		display: flex;
+		flex-direction: column;
+		width:160rem;
+		margin-left:2rem;
+	}
+}
+
+/*=========================Responsive section============================ */
+
+/*=========================Mobile view ============================ */
+
+@media(max-width:500px){
+	.row{
+		display: block;
+		width: 100%;
+		margin-top: 2rem;
+	}
+	.trainer_col{
+		width: 100%;
+
+	}
+}
+
+/*=========================Responsive section============================ */
+
+/*=========================Tablet view ============================ */
+
+@media(max-width:900px){
+
+	.main_container h1{
+		font-size: 4rem;
+	}
+	.main_container h4{
+		font-size: 2rem;
+	}
+	.row{
+		display: block;
+		width: 100%;
+		margin-top: 2rem;
+	}
+	.trainer_col{
+		width: 100%;
+	}
+}  
+

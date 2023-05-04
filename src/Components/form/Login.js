@@ -60,7 +60,7 @@ export default function Login() {
       } else {
         alert(`${userFind.userName} you are successfully  login 🎉🎉`);
         setLogin(true);
-        nav("/home");
+        nav("/");
       }
     } else {
       alert("Please Signup first ");
