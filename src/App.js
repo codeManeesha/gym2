@@ -5,10 +5,10 @@ import PrizingSection from './Pages/PrizingSection/PrizingSection';
 import TrainingSection from './Pages/TraingSection/TrainingSection';
 import Navbar from './Navbar/Navbar';
 import Home from './Pages/Home/Home';
-import AboutUs from './Pages/AboutUs/AboutUs';
+import AboutUs from './Pages/About/About'
 import Login from './Components/form/Login'
 import SignUp from './Components/form/SignUp'
-
+import Footer from './Components/Footer/Footer'
 function App() {
   return (
     <div className="App">
@@ -21,6 +21,7 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path='/signUp' element={<SignUp/>}/>  
     </Routes>
+    <Footer/>
 
     
      
