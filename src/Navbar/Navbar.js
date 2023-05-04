@@ -22,10 +22,10 @@ export default function Navbar() {
             <Link to="/aboutUs">About Us</Link>
           </li>
           <li className={nav.common}>
-            <Link to="/PrizingSection">PrizingSection</Link>
+            <Link to="/PricingSection">Pricingsection</Link>
           </li>
           <li className={nav.common}>
-            <Link to="/trainingSection">trainingSection</Link>
+            <Link to="/trainingSection">Trainingsection</Link>
           </li>
          
           <div>

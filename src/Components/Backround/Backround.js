@@ -17,7 +17,7 @@ export default function Background(props) {
         <p>{props.desc}</p>
         <p>
 
-          <Link to="/pricezingSection"><CustomButton btntxt="Select Your Plan" style={bg.btnselect} /></Link>
+          <Link to="/pricingSection"><CustomButton btntxt="Select Your Plan" style={bg.btnselect} /></Link>
 
         </p>
       </div>
