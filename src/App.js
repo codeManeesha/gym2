@@ -5,10 +5,14 @@ import PricingSection from './Pages/PricingSection/PricingSection';
 import TrainingSection from './Pages/TrainingSection/Training';
 import Navbar from './Navbar/Navbar';
 import Home from './Pages/Home/Home';
-import AboutUs from './Pages/AboutUs/AboutUs';
+import AboutUs from './Pages/About/About'
 import Login from './Components/form/Login'
 import SignUp from './Components/form/SignUp'
+
+import Footer from './Components/Footer/Footer'
+
 import PricingAfter from './Pages/PricingSection/PricingAfter'
+
 
 function App() {
   return (
@@ -23,6 +27,7 @@ function App() {
       <Route path='/signUp' element={<SignUp/>}/>  
       <Route path = '/pricingafter' element ={<PricingAfter/>}/>
     </Routes>
+    <Footer/>
 
     
      
