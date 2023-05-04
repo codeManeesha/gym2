@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Styles from './PricingSection.module.css'
 import { useNavigate } from 'react-router-dom'
-import { getUsers } from '../../utils/localStorage'
+
 
 // import { getUsers } from '../../utils/localStorage'
 
