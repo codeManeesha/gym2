@@ -1,10 +1,17 @@
-import React, {useEffect } from "react";
+
+import React, {useEffect ,useState} from "react";
 import Styles from "./PricingSection.module.css";
 import { useNavigate } from "react-router-dom";
 import pricing from "../../images/pricing.jpg";
 import Background from "../../Components/Backround/Backround";
 import { useRecoilValue } from "recoil";
 import { isRefresh } from "../../Recoil";
+
+
+
+
+
+
 
 function PricingSection() {
   const navi = useNavigate();
