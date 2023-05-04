@@ -1,0 +1,172 @@
+
+.first{
+    height: 60%;
+    width:80%;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 4px solid red;
+    margin-left:-2rem;
+}
+.name{
+    font-size: 25px;
+    font-weight: 400px;
+    color: black;
+    text-align: center;
+    margin-top:3rem;
+    margin-bottom: 3px;
+}
+.description{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 6px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.experience{
+    font-size: 1.5rem;
+    color: blue;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    margin-top: 0.6rem;
+  }
+   .container{
+      justify-content:center;
+      text-align: center;
+      margin-right: 5rem;
+    margin-top: 19rem;
+    margin-left: 30rem;
+
+} 
+.mainsContainer{
+    position: relative;
+    border-radius: 4px solid black;
+    box-sizing: border-box;
+    width: 98%;
+    height :70%;
+    margin: 5% 1%;
+      justify-content: center;
+      text-align: center;
+      
+  }
+  .head1{
+    margin-top: -15rem;
+    margin-left: -20rem;
+    margin-bottom: 7rem;
+    font-size: 3rem;
+    text-decoration: underline;
+
+}
+.para{
+    margin-top: -4rem;
+    font-size: 1.5rem;
+    margin-left: -27rem;
+}
+
+.lis{
+    list-style-type: circle;
+    justify-content: left;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+.box{
+    padding-top: 2rem;
+padding: 1rem;
+text-align: center;
+justify-content: center;
+margin-left: -1.5rem;
+}
+
+@media screen and (min-width:300px) and (max-width: 750px){
+    .first{
+        height: 100%;
+        width:80%;
+        object-fit: cover;
+        border-radius: 10%;
+        border: 4px solid red;
+        margin-left:1.4rem;
+    }
+    .name{
+        font-size: 20px;
+        font-weight: 400px;
+        color: black;
+        text-align: center;
+        margin-top:1rem;
+        margin-bottom: 3px;
+        margin-left: 1rem;
+    }
+    .lis{
+        
+            list-style-type: circle;
+            justify-content: left;
+            text-align: left;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-left: 4rem;
+        
+        
+    }
+    .description{
+        margin-left: 2rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+        color: black;
+        text-align: center;
+        margin-bottom: 6px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+    .experience{
+        margin-left: 2rem;
+        font-size: 1rem;
+        color: blue;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        margin-top: 0.6rem;
+      }
+      .container{
+        justify-content:center;
+        text-align:left;
+        margin-right: 5rem;
+      margin-top: 19rem;
+      margin-left: 30rem;
+  
+  } 
+  .head1{
+    /* margin-top: -15rem; */
+    /* margin-: 1rem; */
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    text-decoration: underline;
+     text-align:center;
+    justify-content: center; 
+    margin-left: -37rem;
+    
+
+}
+.para{
+    margin-top: -4rem;
+    font-size: 1rem;
+    margin-right: -37rem;
+    text-align: center;
+    justify-content: center;
+    margin-right:10rem ;
+}
+.mainsContainer{
+    /* position: relative; */
+    border-radius: 4px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    height :56rem;
+    border: 1px solid black;
+   
+    
+      /* margin-left: -.1rem; */
+      justify-content: center;
+      text-align: center;
+     
+}
+}
