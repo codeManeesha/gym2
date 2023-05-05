@@ -9,6 +9,7 @@ import AboutUs from './Pages/AboutUs/AboutUs';
 import Login from './Components/form/Login'
 import SignUp from './Components/form/SignUp'
 import PricingAfter from './Pages/PricingSection/PricingAfter'
+import NoMatch from './Components/NoMatch';
 
 function App() {
   return (
@@ -21,11 +22,8 @@ function App() {
       <Route path='/TrainingSection'element={<TrainingSection/>}/> 
       <Route path='/login' element={<Login/>}/>
       <Route path='/signUp' element={<SignUp/>}/>  
-      <Route path = '/pricingafter' element ={<PricingAfter/>}/>
+      <Route path="*" element={<NoMatch />} />
     </Routes>
-
-    
-     
     </div>
   );
 }
