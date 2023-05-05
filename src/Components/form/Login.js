@@ -14,7 +14,6 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [emailError, setEmailError] = useState("");
-
   const [userList, setUserList] = useState([]);
   const nav = useNavigate();
   const setLogin = useSetRecoilState(isRefresh);
@@ -25,6 +24,9 @@ export default function Login() {
   }, []);
   // console.log(userList);
   function handleLogin() {
+    let valid = false;
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const passwordRegex = /^[a-zA-Z0-9!@#$%^&*]{4,8}$/;
     if (email === "" || password === "") {
       alert("Fill the form first");
 
@@ -34,6 +36,7 @@ export default function Login() {
         setEmailError("Invalid email format");
         return;
       }
+      valid = true;
       setEmailError("");
 
       //validation for password
@@ -44,7 +47,7 @@ export default function Login() {
         );
         return;
       }
-
+      valid = true;
       setPasswordError("");
     } else if (userList !== null) {
       const userFind = userList.find(
@@ -98,6 +101,7 @@ export default function Login() {
           onClick={handleLogin}
           btntxt="Login"
         />
+
         <p>
           Not registered yet? <Link to="/signup"> Signup</Link>
         </p>
