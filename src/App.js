@@ -19,9 +19,10 @@ function App() {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [location]);
+  const show = location.pathname ==='/' || location.pathname === '/about' || location.pathname === '/contact';
   return (
     <div className="App">
-    <Navbar/>
+  { show && <Navbar />}
     <Routes>
     
   
@@ -35,7 +36,7 @@ function App() {
     
       
     </Routes>
-      <Footer/>
+     {show && <Footer/>}
    
 
     
