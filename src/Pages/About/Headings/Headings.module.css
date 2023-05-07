@@ -1,0 +1,60 @@
+.main_heading{
+  text-align: center;
+  margin: 3rem 0;
+}
+.main_heading h1{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.main_heading p{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  color: grey;
+}
+
+
+/* ======================Responsive Section====================== */
+
+/* ======================Tablet View====================== */
+
+@media (max-width:900px) {
+  .main_heading{
+    margin: 3rem 0;
+    text-align: left;
+    padding: 1rem;
+    
+  }
+  .main_heading h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+  .main_heading p{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    padding: 1rem;
+    color: grey;
+  }
+}
+
+/* ======================Mobile View====================== */
+
+@media (max-width:500px) {
+  .main_heading{
+    margin: 2rem 0;
+    text-align: left;
+  }
+  .main_heading h1{
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding: 0 .5rem;
+  }
+  .main_heading p{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    padding: .5rem;
+    color: grey;
+  }
+}
+
+

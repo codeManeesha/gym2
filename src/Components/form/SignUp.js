@@ -10,10 +10,12 @@ export default function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userName, setUserName] = useState("");
-  // const [userDatas, setUserDatas] = useState([]);
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+  const [userNameError, setUserNameError] = useState("");
+  const [localStorageData, setLocalStorageData] = useState([]);
 
   const navigate = useNavigate();
-  const [localStorageData, setLocalStorageData] = useState([]);
 
   useEffect(() => {
     const data = localStorage.getItem("userData");
@@ -29,33 +31,47 @@ export default function SignUp() {
       userName: userName,
     };
   
-    // validation
+    // email validation
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(email)) {
+      setEmailError("Invalid email format");
+      return;
+    }
+    setEmailError("");
   
+
+
+    // password validation
+    const passwordRegex = /^[a-zA-Z0-9!@#$%^&*]{4,8}$/;
+    if (!passwordRegex.test(password)) {
+      setPasswordError("Password should be 4-8 characters long and can contain letters, numbers and special characters !@#$%^&*");
+      return;
+    }
+    setPasswordError("");
+
+    // username validation
+    const userNameRegex = /^[a-zA-Z]+$/i
+    ;
+    if (!userNameRegex.test(userName)) {
+      setUserNameError("Username can only contain letters");
+      return;
+    }
+    setUserNameError("");
   
-    if (email.includes('@') && password.length >= 4 && password.length <= 8) {
-      setLocalStorageData(prevData => [...prevData, userInfo]);
-      console.log(localStorageData)
-      if(localStorageData.find((user)=> user.email === email && user.userName === userName)){
-  
-      return alert("user already exist please choose another email and username")
-  
+    // check if user already exists
+    if(localStorageData.find((user)=> user.email === email || user.userName === userName)){
+      alert("User already exists. Please choose another email and username.");
+      return;
     }
       
-    // if(user = userInfo.find((user) => user.email === userInfo.email))
-      
-      localStorage.setItem('userData', JSON.stringify([...localStorageData, userInfo])) 
-      alert('Succesfully Registered!!')
-      navigate('/')
-    }
-     else {
-      alert('Please enter valid details');
-    }
+    localStorage.setItem('userData', JSON.stringify([...localStorageData, userInfo]));
+    alert('Successfully Registered!!');
+    navigate('/login');
   
     setEmail('');
     setPassword('');
     setUserName('');
   }
- 
 
   return (
     <>
@@ -73,6 +89,7 @@ export default function SignUp() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        {emailError && <p className={style.error}>{emailError}</p>}
         <CustomInput
           className={style.password}
           type="text"
@@ -80,6 +97,7 @@ export default function SignUp() {
           value={userName}
           onChange={(e) => setUserName(e.target.value)}
         />
+        {userNameError && <p className={style.error}>{userNameError}</p>}
         <CustomInput
           className={style.password}
           type="password"
@@ -87,15 +105,16 @@ export default function SignUp() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        {passwordError && <p className={style.error}>{passwordError}</p>}
         <CustomButton
           style={style.button}
           onClick={handleSignUp}
           btntxt="SignUp"
         />
         <p>
-          Already registered? <Link to="/">Login</Link>
+          Already registered? <Link to="/login">Login</Link>
         </p>
       </div>
     </>
   );
-}
+  }

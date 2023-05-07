@@ -56,10 +56,10 @@ h5 {
 	text-align: center;
 }
 .membership {
-	border: 1px solid black;
+	
 	padding: 20px;
 	font-family: "Times New Roman", Times, serif;
-	background-image: linear-gradient(orange 10%, gray 20%);
+	background-color: #cccccc;
 	color: black;
 }
 .large {
@@ -72,12 +72,13 @@ h5 {
 	position: relative;
 	
 }
-.button1 {
-    margin-top: 100px;
+ .button1 {
+    margin-top: 6rem;
+	margin-right: 3rem;
 
 	display: inline-block;
     padding: 5px 10px;
-	font-size: 20px;
+	font-size: 1rem;
 	cursor: pointer;
 	text-decoration: none;
 	outline: none;
@@ -86,11 +87,60 @@ h5 {
 	border: none;
 	border-radius: 8px;
 
+ }
+ .button2 {
+    margin-top: 7rem;
+	margin-right: 3rem;
 
-}
+	display: inline-block;
+    padding: 5px 10px;
+	font-size: 1rem;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 8px;
 
+ }
+ .button3 {
+    margin-top: 5rem;
+	margin-right: 3rem;
+
+	display: inline-block;
+    padding: 5px 10px;
+	font-size: 1rem;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 8px;
+
+ }
+ .button4 {
+    margin-top: 4rem;
+	margin-right: 3rem;
+
+	display: inline-block;
+    padding: 5px 10px;
+	font-size: 1rem;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 8px;
+
+ }
+
+/*
 .button2 {
-    margin-top: 125px;
+	margin-top: 6rem;
+	margin-right: 3rem;
 	display: inline-block;
     padding: 5px 10px;
 	font-size: 20px;
@@ -106,7 +156,8 @@ h5 {
 }
 
 .button3 {
-	margin-top: 90px;
+	margin-top: 6rem;
+	margin-right: 3rem;
 	display: inline-block;
 	padding: 5px 10px;
 	font-size: 20px;
@@ -122,7 +173,8 @@ h5 {
 }
 
 .button4 {
-	margin-top: 60px;
+	margin-top: 6rem;
+	margin-right: 3rem;
 	display: inline-block;
 	padding: 5px 10px;
 	font-size: 20px;
@@ -134,7 +186,7 @@ h5 {
 	background-color: #4CAF50;
 	border: none;
 	border-radius: 8px;
-}
+} */
 .button1:hover {
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
@@ -153,16 +205,24 @@ h5 {
 	font-family: 'Brush Script MT', cursive;
 }
 .list1{
+	list-style: none;
 	margin-top: 50px;
+	margin-right: 3rem;
 }
 .list2{
 	margin-top: 50px;
+	list-style: none;
+	margin-right: 3rem;
 }
 .list3{
 	margin-top: 50px;
+	list-style: none;
+	
 }
 .list4{
 	margin-top: 50px;
+	list-style: none;
+	
 }
 
 @media only screen and (min-width: 300px) and (max-width : 750px){
