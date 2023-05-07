@@ -10,7 +10,7 @@ import Login from './Components/form/Login'
 import SignUp from './Components/form/SignUp'
 import Footer from './Components/Footer/Footer'
 import NoMatch from './Pages/NoMatch';
-import PricingAfter from './Pages/PricingSection/PricingAfter'
+
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
@@ -19,9 +19,10 @@ function App() {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [location]);
+  const show = location.pathname ==='/' || location.pathname === '/about' || location.pathname === '/contact';
   return (
     <div className="App">
-    <Navbar/>
+  { show && <Navbar />}
     <Routes>
     
   
@@ -31,12 +32,11 @@ function App() {
       <Route path='/TrainingSection'element={<TrainingSection/>}/> 
       <Route path='/login' element={<Login/>}/>
       <Route path='/signUp' element={<SignUp/>}/>  
-      <Route path = '/pricingafter' element ={<PricingAfter/>}/>
       <Route path='*' element={<NoMatch/>}/>
     
       
     </Routes>
-      <Footer/>
+     {show && <Footer/>}
    
 
     
