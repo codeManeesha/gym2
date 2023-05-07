@@ -25,7 +25,7 @@ export default function Navbar() {
             <Link to="/PricingSection">Pricingsection</Link>
           </li>
           <li className={nav.common}>
-            <Link to="/trainingSection">Trainingsection</Link>
+            <Link to="/TrainingSection">Trainingsection</Link>
           </li>
          
           <div>
