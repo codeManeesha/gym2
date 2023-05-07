@@ -1,255 +1,108 @@
-.main {
-	display: flex;
-	gap: 50px;
-	margin-top: 50px;
-	padding: 20px;
-	margin-left: 100px;
-}
-.heading {
-	color: yellow;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	text-align: center;
 
-}
-.Free {
-
-	padding: 30px;
-	background-image: linear-gradient(red 10%, 30%, blue 90%);
-	color: white;
-	border-radius: 15PX;
-	text-align: center;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-.Free:hover {
-	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-.pass {
-
-	padding: 30px;
-	background-image: linear-gradient(red 10%, 30%, blue 90%);
-	color: white;
-	border-radius: 15PX;
-	text-align: center;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-.pass:hover {
-	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-.monthly {
-	padding: 20px;
-	color: white;
-	background-image: linear-gradient(red 10%, 30%, blue 90%);
-	border-radius: 15PX;
-	text-align: center;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-
-
-}
-.monthly:hover {
-	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-h5 {
-	color: gold;
-	text-align: center;
-}
-.membership {
-	
-	padding: 20px;
-	font-family: "Times New Roman", Times, serif;
-	background-color: #cccccc;
-	color: black;
-}
-.large {
-	/* background-image: url("./gym-g7320dfddf_1920.jpg"); */
-	background-color: white;
-	height: 800px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	
-}
- .button1 {
-    margin-top: 6rem;
-	margin-right: 3rem;
-
-	display: inline-block;
-    padding: 5px 10px;
-	font-size: 1rem;
-	cursor: pointer;
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: #4CAF50;
-	border: none;
-	border-radius: 8px;
-
- }
- .button2 {
-    margin-top: 7rem;
-	margin-right: 3rem;
-
-	display: inline-block;
-    padding: 5px 10px;
-	font-size: 1rem;
-	cursor: pointer;
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: #4CAF50;
-	border: none;
-	border-radius: 8px;
-
- }
- .button3 {
-    margin-top: 5rem;
-	margin-right: 3rem;
-
-	display: inline-block;
-    padding: 5px 10px;
-	font-size: 1rem;
-	cursor: pointer;
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: #4CAF50;
-	border: none;
-	border-radius: 8px;
-
- }
- .button4 {
-    margin-top: 4rem;
-	margin-right: 3rem;
-
-	display: inline-block;
-    padding: 5px 10px;
-	font-size: 1rem;
-	cursor: pointer;
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: #4CAF50;
-	border: none;
-	border-radius: 8px;
-
- }
-
-/*
-.button2 {
-	margin-top: 6rem;
-	margin-right: 3rem;
-	display: inline-block;
-    padding: 5px 10px;
-	font-size: 20px;
-	cursor: pointer;
-
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: #4CAF50;
-	border: none;
-	border-radius: 8px;
-
-}
-
-.button3 {
-	margin-top: 6rem;
-	margin-right: 3rem;
-	display: inline-block;
-	padding: 5px 10px;
-	font-size: 20px;
-	cursor: pointer;
-
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: #4CAF50;
-	border: none;
-	border-radius: 8px;
-
-}
-
-.button4 {
-	margin-top: 6rem;
-	margin-right: 3rem;
-	display: inline-block;
-	padding: 5px 10px;
-	font-size: 20px;
-	cursor: pointer;
-
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: #4CAF50;
-	border: none;
-	border-radius: 8px;
-} */
-.button1:hover {
-	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-.button2:hover {
-	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-.button3:hover {
-	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-.button4:hover {
-	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-.dollers {
-	font-size: 90px;
-	font-family: 'Brush Script MT', cursive;
-}
-.list1{
-	list-style: none;
-	margin-top: 50px;
-	margin-right: 3rem;
-}
-.list2{
-	margin-top: 50px;
-	list-style: none;
-	margin-right: 3rem;
-}
-.list3{
-	margin-top: 50px;
-	list-style: none;
-	
-}
-.list4{
-	margin-top: 50px;
-	list-style: none;
-	
-}
-
-@media only screen and (min-width: 300px) and (max-width : 750px){
-	.main {
+	.main{
+		display:flex;
+		margin-top: 1rem;
+	}
+	.pricechart{
+		width: 31%;
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
-		margin-top: 2rem;
-		justify-content: center;	
-		width: 50%;
+		box-sizing: border-box;
+		box-shadow: 0 0 10px grey;
+		background-color: white;
+		margin-left: 19px;
+		margin-bottom: 2rem;
 	}
-    .large{
-		height: 100%;
-		flex-direction: column;
+	.pricechart:hover{
+		transform: translateY(-10px);
+		transition: 0.3s linear;
 	}
-	.membership{
-		display: flex;
-		flex-direction: column;
-	}
-	.Free{
-		height: fit-content;
-		width: fit-content;
-	}
-}
-@media only screen and (min-width: 800px) and (max-width : 1200px){
-	.large{
+	
+	.pricing{
+		background-color:rgba(164, 163, 163, 0.612);
+		padding: 70px 50px;
 		width: 100%;
-		flex-direction: column;
+		text-align: center;
+		box-sizing: border-box;
 	}
-}
+	
+	.pricing > h4 >span{
+		border-bottom: 3px solid red;
+	}
+	.heading{
+		width: 100%;
+	}
+	.heading > h4{
+		padding: 10px 30px;
+		font-size: 17px;
+		text-align: center;
+		color: grey;
+	}
+	.facility{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 20px 0;
+		box-sizing: border-box;
+	}
+	.facility > p {
+		display: flex;
+		justify-content:space-between;
+		width: 50%;
+		margin-bottom: 10px;
+		font-size: 18px;
+		color: black;
+		box-sizing: border-box;
+	}
+	.facility > p >span:nth-child(1){
+			width: 50px;
+	}
+	.facility > p >span:nth-child(2){
+			width: 100px;
+	}
+	.btnselect{
+		color: white;
+		background-color: red;
+		padding: 8px 15px;
+		border-radius: 24px;
+		outline: none;
+		border: none;
+		cursor: pointer;
+	}
+	.plan{
+		text-align: center;
+		padding-bottom: 1rem;
+	}
+	.membership {
+	
+		padding: 20px;
+		font-family: "Times New Roman", Times, serif;
+		background-color: #cccccc;
+		color: black;
+	} 
+	/* ======================Responsive Section=========================== */
+	
+	
+	
+	@media (max-width:500px) {
+		.main{
+			display: flex;
+			flex-direction: column;
+		}
+		.pricechart{
+			width: 100%;
+			margin-left: 3px;
+		}
+	}
+	@media (max-width:900px) {
+		.main{
+			display: flex;
+			flex-direction: column;
+		}
+		.pricechart{
+			width: 100%;
+			
+		}
+	}
